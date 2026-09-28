@@ -3,22 +3,28 @@ body {
     margin: 0;
     padding: 0;
     background-color: #050505;
+    color: #fefefe;
 }
 
 h1 {
-    background-color: #ff0000;
+    background: linear-gradient(135deg, #ff0000, #b30000);
     color: #ffffff;
     font-size: 3rem;
     font-weight: 700;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 60px 20px 40px 20px;
     text-align: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    margin-top: 0;
     margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.25);
+}
+
+p {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -26,24 +32,36 @@ h2 {
     color: #ff0000;
     font-size: 1.8rem;
     font-weight: 600;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 15px 40px;
     border-radius: 30px;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: none;
+    max-width: 400px;
+    margin: 2rem auto 1.5rem auto;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin-left: 20px;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
 }
 
 li {
-    color: #fefefe;
-    margin-bottom: 10px;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 18px 24px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border-left: 5px solid #ff0000; /* Výchozí červený okraj */
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-left-color 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(6px);
+    background-color: #1a1a1a;
+    border-left-color: #0059ff; /* Po najetí myši bude žlutá (nebo třeba #ffd700) */
 }
